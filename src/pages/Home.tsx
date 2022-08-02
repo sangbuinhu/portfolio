@@ -1,34 +1,17 @@
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
+import EmailIcon from '@mui/icons-material/Email'
+import FacebookIcon from '@mui/icons-material/Facebook'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone'
 import SchoolIcon from '@mui/icons-material/School'
+import ShareLocationIcon from '@mui/icons-material/ShareLocation'
 import { Button, Grid, Link, Stack, Typography } from "@mui/material"
-import { Box, width } from "@mui/system"
-import { useEffect, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { Box } from "@mui/system"
 import avatar from "../assets/avatar.jpg"
-import ShareLocationIcon from '@mui/icons-material/ShareLocation';
-import EmailIcon from '@mui/icons-material/Email';
-import FacebookIcon from '@mui/icons-material/Facebook';
 
 type Props = {}
 
 const Home = (props: Props) => {
-    const [count, setCount] = useState<string[]>([])
 
-    const navigate = useNavigate();
-
-    useEffect(() => {
-        // setCount([...count, "gass"])
-    }, [])
-
-    useEffect(() => {
-        console.log("object", count);
-    }, [count])
-
-    const plusCount = () => {
-        setCount([...count, "gass"])
-        navigate("/books")
-    }
     return (
         <Stack spacing={2} direction="column">
             <Stack ml={2} direction="column">
