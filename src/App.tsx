@@ -6,7 +6,6 @@ import {
 	BrowserRouter, Route, Routes
 } from "react-router-dom";
 import AppLayout from './components/layouts/AppLayout';
-import Books from './pages/Books';
 import Home from './pages/Home';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
 			<Routes>
 				<Route path="/" element={<AppLayout />}>
 					<Route index element={<Home />} />
-					<Route path='/books' element={<Books />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
