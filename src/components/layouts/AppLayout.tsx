@@ -1,15 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import AppBar from '../common/AppBar'
-type Props = {}
+import { Box } from '@mui/material';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import AppBar from '../common/AppBar';
+type Props = {};
 
 const AppLayout = (props: Props) => {
     return (
-        <div>
+        <Box bgcolor={'#f0ebe3'}>
             <AppBar />
             <Outlet />
-        </div>
-    )
-}
+        </Box>
+    );
+};
 
-export default AppLayout
+export default AppLayout;

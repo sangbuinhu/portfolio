@@ -5,177 +5,22 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import SchoolIcon from '@mui/icons-material/School';
 import ShareLocationIcon from '@mui/icons-material/ShareLocation';
-import { Button, Fab, Grid, Link, Stack, Typography } from "@mui/material";
+import { Button, Grid, Link, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { avatar } from '../components/common/ImageLogo';
+import { experiences } from '../components/common/Infomation';
 
 import StackCol from '../components/common/StackCol';
 import StackRow from '../components/common/StackRow';
 
-/* Image */
-import avatar from "../assets/avatar.jpg";
-
-import jsLogo from "../assets/jsLogo.png";
-import netLogo from "../assets/netLogo.png";
-import swiftLogo from "../assets/swiftLogo.png";
-import tsLogo from "../assets/tsLogo.png";
-import goLogo from "../assets/goLogo.png";
-import pythonLogo from "../assets/pythonLogo.png";
-
-import nodejsLogo from "../assets/nodejsLogo.png";
-import reactjsLogo from "../assets/reactjsLogo.png";
-import jqueryLogo from "../assets/jqueryLogo.png";
-import flaskLogo from "../assets/flaskLogo.png";
-import netCoreLogo from "../assets/netCoreLogo.png";
-import expressLogo from "../assets/expressLogo.png";
-import tensorflowLogo from "../assets/tensorflowLogo.png";
-import kerasLogo from "../assets/kerasLogo.png";
-import openCVLogo from "../assets/openCVLogo.png";
-
-import mongoLogo from "../assets/mongoLogo.png";
-import postgresqlLogo from "../assets/postgresqlLogo.png";
-import mysqlLogo from "../assets/mysqlLogo.png";
-
-import githubLogo from "../assets/githubLogo.png";
-
-import seleniumLogo from "../assets/seleniumLogo.png";
-import scrapyLogo from "../assets/scrapyLogo.png";
-import gitLogo from "../assets/gitLogo.png";
-import dockerLogo from "../assets/dockerLogo.png";
-import beautifulSoupLogo from "../assets/beautifulSoupLogo.png";
-
-
-import awsLogo from "../assets/awsLogo.png";
-import awsCloudwatchLogo from "../assets/awsCloudwatchLogo.png";
-import awsEc2Logo from "../assets/awsEc2Logo.png";
-import awsRekogLogo from "../assets/awsRekogLogo.png";
-import awsS3Logo from "../assets/awsS3Logo.png";
-
+// Import Swiper React components
+// Import Swiper styles
+import 'swiper/css';
+import MPaper from '../components/common/MPaper';
+import Skill from './Skill';
 
 type Props = {};
-const experiences = [{
-	title: 'Experience',
-	count: '4 +',
-	subTitle: 'years'
-}, {
-	title: 'Project',
-	count: '5',
-	subTitle: 'done'
-}, {
-	title: 'Company',
-	count: '4',
-	subTitle: 'worked'
-}];
 
-const languages = [{
-	name: 'Javascript',
-	count: '4 +',
-	image: jsLogo
-}, {
-	name: 'Python',
-	count: '2+',
-	image: pythonLogo
-}, {
-	name: 'TypeScript',
-	count: '1+',
-	image: tsLogo
-}, {
-	name: 'C#',
-	count: '1+',
-	image: netLogo
-}, {
-	name: 'Swift',
-	count: '1+',
-	image: swiftLogo
-}, {
-	name: 'Golang',
-	count: '1+',
-	image: goLogo
-}];
-
-const technologies = [{
-	name: 'ReactJS',
-	count: '4 +',
-	image: reactjsLogo
-}, {
-	name: 'NodeJS',
-	count: '2+',
-	image: nodejsLogo
-}, {
-	name: 'Jquery',
-	count: '1+',
-	image: jqueryLogo
-}, {
-	name: 'Flask',
-	count: '1+',
-	image: flaskLogo
-}, {
-	name: '.NET core',
-	count: '1+',
-	image: netCoreLogo
-}, {
-	name: 'ExpressJS',
-	count: '1+',
-	image: expressLogo
-},
-{
-	name: 'Tensorflow',
-	count: '1+',
-	image: tensorflowLogo
-}, {
-	name: 'Keras',
-	count: '1+',
-	image: kerasLogo
-}, {
-	name: 'OpenCV',
-	count: '1+',
-	image: openCVLogo
-}
-];
-
-const databases = [{
-	name: 'MongoDB',
-	image: mongoLogo
-}, {
-	name: 'PostgreSQL',
-	image: postgresqlLogo
-}, {
-	name: 'MySQL',
-	image: mysqlLogo
-}];
-
-const tools = [{
-	name: 'Git',
-	image: gitLogo
-}, {
-	name: 'Github',
-	image: githubLogo
-}, {
-	name: 'Docker',
-	image: dockerLogo
-}, {
-	name: 'Selenium',
-	image: seleniumLogo
-}, {
-	name: 'Scrapy',
-	image: scrapyLogo
-}, {
-	name: 'Beautiful Soup',
-	image: beautifulSoupLogo
-}];
-
-const awsClouds = [{
-	name: 'EC2',
-	image: awsEc2Logo
-}, {
-	name: 'Rekognition',
-	image: awsRekogLogo
-}, {
-	name: 'S3',
-	image: awsS3Logo
-}, {
-	name: 'CloudWatch',
-	image: awsCloudwatchLogo
-}];
 
 const Home = (props: Props) => {
 	// Function will execute on click of button
@@ -311,242 +156,41 @@ const Home = (props: Props) => {
 						<StackCol spacing={4} key={index}>
 							<Box textAlign={"center"}>
 								<Button variant="contained" color="primary" size='medium' sx={{
-									borderRadius: 6
+									borderRadius: 0
 								}}>
 									{element.title}
 								</Button>
 							</Box>
-							<Box
+							<MPaper
 								sx={{
-									width: 200,
-									height: 200,
-									backgroundColor: 'primary.dark',
-									'&:hover': {
-										backgroundColor: 'primary.main',
-										opacity: [0.9, 0.8, 0.7],
-									},
-									boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;",
-									borderRadius: 3,
-									alignItems: 'center',
-									justifyContent: 'center',
-									display: 'flex'
+									borderRadius: 5
 								}}
 							>
-								<StackCol>
-									<Typography variant="h3" textAlign={'center'} fontWeight={"600"} color={'primary'}>
-										{element.count}
-									</Typography>
-									<Typography variant="h6" textAlign={'center'} color={'primary'}>
-										{element.subTitle}
-									</Typography>
-								</StackCol>
-							</Box>
+								<Box
+									sx={{
+										width: 200,
+										height: 200,
+										borderRadius: 3,
+										alignItems: 'center',
+										justifyContent: 'center',
+										display: 'flex'
+									}}
+								>
+									<StackCol>
+										<Typography variant="h3" textAlign={'center'} fontWeight={"600"} color={'primary'}>
+											{element.count}
+										</Typography>
+										<Typography variant="h6" textAlign={'center'} color={'primary'}>
+											{element.subTitle}
+										</Typography>
+									</StackCol>
+								</Box>
+							</MPaper>
+
 						</StackCol>
 					))}
 				</StackRow>
-				<StackRow spacing={20}>
-					<StackCol>
-						<Typography variant="h5" fontWeight={"600"} ml={'18px'}>
-							PROGRAMING LANGUAGES
-						</Typography>
-						<Grid container spacing={2} width={"400px"}>
-							{languages.map((element, index) => (
-								<Grid item xs={4} key={index}>
-									<Box
-										sx={{
-											width: 110,
-											height: 110,
-											backgroundColor: 'primary.dark',
-											'&:hover': {
-												backgroundColor: 'primary.main',
-												opacity: [0.9, 0.8, 0.7],
-											},
-											boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;",
-											borderRadius: 3,
-											alignItems: 'center',
-											justifyContent: 'center',
-											display: 'flex'
-										}}
-									>
-										<StackCol>
-											<Box sx={{
-												textAlign: 'center',
-											}}>
-												<img style={{ height: '60px' }} src={element.image} />
-												<Typography textAlign={'center'} fontSize={'15px'}>
-													{element.name}
-												</Typography>
-											</Box>
-										</StackCol>
-									</Box>
-								</Grid>
-							))}
-						</Grid>
-					</StackCol>
-					<StackCol>
-						<Typography variant="h5" fontWeight={"600"} ml={'18px'}>
-							TOOLS
-						</Typography>
-						<Grid container spacing={2} width={"400px"}>
-							{tools.map((element, index) => (
-								<Grid item xs={4} key={index}>
-									<Box
-										sx={{
-											width: 110,
-											height: 110,
-											backgroundColor: 'primary.dark',
-											'&:hover': {
-												backgroundColor: 'primary.main',
-												opacity: [0.9, 0.8, 0.7],
-											},
-											boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;",
-											borderRadius: 3,
-											alignItems: 'center',
-											justifyContent: 'center',
-											display: 'flex'
-										}}
-									>
-										<StackCol>
-											<Box sx={{
-												textAlign: 'center',
-											}}>
-												<img style={{ height: '60px' }} src={element.image} />
-												<Typography textAlign={'center'} fontSize={'15px'}>
-													{element.name}
-												</Typography>
-											</Box>
-										</StackCol>
-									</Box>
-								</Grid>
-							))}
-						</Grid>
-					</StackCol>
-				</StackRow>
-				<StackRow spacing={20}>
-					<StackCol>
-						<Typography variant="h5" fontWeight={"600"} ml={'18px'}>
-							DATABASES / AWS PLATFORMS
-						</Typography>
-						<Grid container spacing={2} width={"400px"}>
-							{databases.map((element, index) => (
-								<Grid item xs={4} key={index}>
-									<Box
-										sx={{
-											width: 110,
-											height: 110,
-											backgroundColor: 'primary.dark',
-											'&:hover': {
-												backgroundColor: 'primary.main',
-												opacity: [0.9, 0.8, 0.7],
-											},
-											boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;",
-											borderRadius: 3,
-											alignItems: 'center',
-											justifyContent: 'center',
-											display: 'flex'
-										}}
-									>
-										<StackCol>
-											<Box sx={{
-												textAlign: 'center',
-											}}>
-												<img style={{ height: '60px' }} src={element.image} />
-												<Typography textAlign={'center'} fontSize={'15px'}>
-													{element.name}
-												</Typography>
-											</Box>
-										</StackCol>
-									</Box>
-								</Grid>
-							))}
-						</Grid>
-					</StackCol>
-					<StackCol>
-						<Typography variant="h5" fontWeight={"600"} ml={'18px'}>
-							TECHNOLOGIES / LIBRARIES
-						</Typography>
-						<Grid container spacing={2} width={"400px"}>
-							{technologies.map((element, index) => (
-								<Grid item xs={4} key={index}>
-									<Box
-										sx={{
-											width: 110,
-											height: 110,
-											backgroundColor: 'primary.dark',
-											'&:hover': {
-												backgroundColor: 'primary.main',
-												opacity: [0.9, 0.8, 0.7],
-											},
-											boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;",
-											borderRadius: 3,
-											alignItems: 'center',
-											justifyContent: 'center',
-											display: 'flex'
-										}}
-									>
-										<StackCol>
-											<Box sx={{
-												textAlign: 'center',
-											}}>
-												<img style={{ height: '60px' }} src={element.image} />
-												<Typography textAlign={'center'} fontSize={'15px'}>
-													{element.name}
-												</Typography>
-											</Box>
-										</StackCol>
-									</Box>
-								</Grid>
-							))}
-						</Grid>
-					</StackCol>
-				</StackRow>
-				<StackRow spacing={20}>
-					<StackCol>
-						<Typography variant="h5" fontWeight={"600"} ml={'18px'}>
-							AWS CLOUD PLATFORMS
-						</Typography>
-						<Grid container spacing={2} width={"400px"}>
-							{awsClouds.map((element, index) => (
-								<Grid item xs={4} key={index}>
-									<Box
-										sx={{
-											width: 110,
-											height: 110,
-											backgroundColor: 'primary.dark',
-											'&:hover': {
-												backgroundColor: 'primary.main',
-												opacity: [0.9, 0.8, 0.7],
-											},
-											boxShadow: "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;",
-											borderRadius: 3,
-											alignItems: 'center',
-											justifyContent: 'center',
-											display: 'flex'
-										}}
-									>
-										<StackCol>
-											<Box sx={{
-												textAlign: 'center',
-											}}>
-												<img style={{ height: '60px' }} src={element.image} />
-												<Typography textAlign={'center'} fontSize={'15px'}>
-													{element.name}
-												</Typography>
-											</Box>
-										</StackCol>
-									</Box>
-								</Grid>
-							))}
-						</Grid>
-					</StackCol>
-					<StackCol>
-						{/* <Typography variant="h5" fontWeight={"600"} ml={'18px'}>
-							CLOUD PLATFORM
-						</Typography> */}
-						<Grid container spacing={2} width={"400px"}>
-						</Grid>
-					</StackCol>
-				</StackRow>
+				<Skill></Skill>
 				<StackRow>
 					<Box
 						sx={{
@@ -555,9 +199,7 @@ const Home = (props: Props) => {
 					</Box>
 				</StackRow>
 			</StackCol >
-
 		</Stack>
-
 	);
 };
 
