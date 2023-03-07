@@ -1,34 +1,36 @@
 /* Image */
 import avatar from "../../assets/avatar.jpg";
 
-import goLogo from "../../assets/goLogo.png";
-import jsLogo from "../../assets/jsLogo.png";
-import netLogo from "../../assets/netLogo.png";
-import pythonLogo from "../../assets/pythonLogo.png";
-import swiftLogo from "../../assets/swiftLogo.png";
-import tsLogo from "../../assets/tsLogo.png";
+import goLogo from "../../assets/go-original.svg";
+import jsLogo from "../../assets/javascript-original.svg";
+import netLogo from "../../assets/csharp-line.svg";
+import pythonLogo from "../../assets/python-original.svg";
+import swiftLogo from "../../assets/swift-original.svg";
+import tsLogo from "../../assets/typescript-original.svg";
 
-import expressLogo from "../../assets/expressLogo.png";
-import flaskLogo from "../../assets/flaskLogo.png";
-import jqueryLogo from "../../assets/jqueryLogo.png";
+import expressLogo from "../../assets/express-original.svg";
+import flaskLogo from "../../assets/flask-original.svg";
+import jqueryLogo from "../../assets/jquery-original.svg";
 import kerasLogo from "../../assets/kerasLogo.png";
-import netCoreLogo from "../../assets/netCoreLogo.png";
-import nodejsLogo from "../../assets/nodejsLogo.png";
-import openCVLogo from "../../assets/openCVLogo.png";
-import reactjsLogo from "../../assets/reactjsLogo.png";
-import tensorflowLogo from "../../assets/tensorflowLogo.png";
+import netCoreLogo from "../../assets/dotnetcore-original.svg";
+import nodejsLogo from "../../assets/nodejs-original.svg";
+import openCVLogo from "../../assets/opencv-original.svg";
+import reactjsLogo from "../../assets/react-original.svg";
+import tensorflowLogo from "../../assets/tensorflow-original.svg";
 
-import mongoLogo from "../../assets/mongoLogo.png";
-import mysqlLogo from "../../assets/mysqlLogo.png";
-import postgresqlLogo from "../../assets/postgresqlLogo.png";
+import mongoLogo from "../../assets/mongodb-original.svg";
+import mysqlLogo from "../../assets/mysql-original.svg";
+import postgresqlLogo from "../../assets/postgresql-original.svg";
 
-import githubLogo from "../../assets/githubLogo.png";
-
+import githubLogo from "../../assets/github-original.svg";
 import beautifulSoupLogo from "../../assets/beautifulSoupLogo.png";
-import dockerLogo from "../../assets/dockerLogo.png";
-import gitLogo from "../../assets/gitLogo.png";
+import dockerLogo from "../../assets/docker-original.svg";
+import gitLogo from "../../assets/git-original.svg";
 import scrapyLogo from "../../assets/scrapyLogo.png";
-import seleniumLogo from "../../assets/seleniumLogo.png";
+import seleniumLogo from "../../assets/selenium-original.svg";
+import postmanLogo from "../../assets/postman.png";
+import puttyLogo from "../../assets/putty-original.svg";
+import fireZillaLogo from "../../assets/fileZilla.png";
 
 
 import awsCloudwatchLogo from "../../assets/awsCloudwatchLogo.png";
@@ -37,7 +39,6 @@ import awsLogo from "../../assets/awsLogo.png";
 import awsRekogLogo from "../../assets/awsRekogLogo.png";
 import awsS3Logo from "../../assets/awsS3Logo.png";
 
-import goDemo from "../../assets/go-original.svg";
 
 
 
@@ -73,5 +74,7 @@ export {
   swiftLogo,
   tensorflowLogo,
   tsLogo,
-  goDemo
+  fireZillaLogo,
+  postmanLogo,
+  puttyLogo
 };

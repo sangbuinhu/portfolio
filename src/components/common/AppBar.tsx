@@ -5,7 +5,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import WebhookIcon from '@mui/icons-material/Webhook';
 
 const pages = ['About', 'News', 'Contact'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -104,7 +104,7 @@ const ResponsiveAppBar = () => {
                     >
                         LOGO
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    {/* <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                         {pages.map((page) => (
                             <Button
                                 key={page}
@@ -114,8 +114,8 @@ const ResponsiveAppBar = () => {
                                 {page}
                             </Button>
                         ))}
-                    </Box>
-
+                    </Box> */}
+                    {/* 
                     <Box sx={{ flexGrow: 0 }}>
                         <Tooltip title="Open settings">
                             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
@@ -144,7 +144,7 @@ const ResponsiveAppBar = () => {
                                 </MenuItem>
                             ))}
                         </Menu>
-                    </Box>
+                    </Box> */}
                 </Toolbar>
             </Container>
         </AppBar>

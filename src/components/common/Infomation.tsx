@@ -1,5 +1,5 @@
 import {
-  awsCloudwatchLogo, awsEc2Logo, awsRekogLogo, awsS3Logo, beautifulSoupLogo, dockerLogo, expressLogo, flaskLogo, githubLogo, gitLogo, goDemo, goLogo, jqueryLogo, jsLogo, kerasLogo, mongoLogo, mysqlLogo, netCoreLogo, netLogo, nodejsLogo, openCVLogo, postgresqlLogo, pythonLogo, reactjsLogo, scrapyLogo, seleniumLogo, swiftLogo, tensorflowLogo, tsLogo
+  awsCloudwatchLogo, awsEc2Logo, awsRekogLogo, awsS3Logo, beautifulSoupLogo, dockerLogo, expressLogo, flaskLogo, githubLogo, gitLogo, goLogo, jqueryLogo, jsLogo, kerasLogo, mongoLogo, mysqlLogo, netCoreLogo, netLogo, nodejsLogo, openCVLogo, postgresqlLogo, pythonLogo, reactjsLogo, scrapyLogo, seleniumLogo, swiftLogo, tensorflowLogo, tsLogo, fireZillaLogo, puttyLogo, postmanLogo
 } from "./ImageLogo";
 
 const experiences = [{
@@ -39,7 +39,7 @@ const languages = [{
 }, {
   name: 'Golang',
   count: '1+',
-  image: goDemo
+  image: goLogo
 }];
 
 const technologies = [{
@@ -111,6 +111,15 @@ const tools = [{
 }, {
   name: 'Beautiful Soup',
   image: beautifulSoupLogo
+}, {
+  name: 'Postman',
+  image: postmanLogo
+}, {
+  name: 'PuTTY',
+  image: puttyLogo
+}, {
+  name: 'FireZilla',
+  image: fireZillaLogo
 }];
 
 const awsClouds = [{
