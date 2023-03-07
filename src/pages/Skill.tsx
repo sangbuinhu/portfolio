@@ -28,10 +28,10 @@ const Skill = (props: Props) => {
             clickable: true
           }}
           modules={[Pagination, Autoplay]}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
         >
           <SwiperSlide>
             <MPaper
